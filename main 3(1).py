@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+fig = plt.figure(layout="constrained")
+ax_array = fig.subplots(2, 2, squeeze=False)
+ax_array[1, 1].bar(['30.09', '10.10', '23.11', '16.12', '13.01'], [3, 5, 4, 3, 4], color = 'blue', label = 'Матан')
+plt.legend()
+ax_array[0, 0].bar(['10.09', '13.10', '17.11', '24.12', '18.01'], [4, 4, 3, 5, 3], color = 'red', label = 'Линал')
+plt.legend()
+ax_array[0, 1].bar(['15.09', '23.10', '18.11', '19.12', '19.01'], [5, 4, 4, 3, 5], color = 'yellow', label = 'Физика')
+plt.legend()
+ax_array[1, 0].bar(['27.09', '15.10', '03.11', '25.12', '18.01'], [4, 3, 4, 5, 4], color = 'pink', label = 'ВВАРКТ')
+plt.legend()
+plt.show()
